@@ -25,7 +25,7 @@ class Team(QueryBase):
         # from the team table for all teams
         # in the database
         query_script = f"""
-        SELECT team_naem, team_id 
+        SELECT team_name, team_id 
         FROM {self.name}
         """
         return self.query(query_script)
